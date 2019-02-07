@@ -58,7 +58,6 @@
 			<a href="#academic_info" style="text-decoration:none; color:#000"><span style="background-color:#f44b42; padding:10;">Academic Information</span></a>
 			<a href="#services" style="text-decoration:none; color:#000;"><span style="background-color:#f44b42; padding:10;">Services</span></a>
 			<a href="#documentation" style="text-decoration:none; color:#000"><span style="background-color:#f44b42; padding:10;">Documentation</span></a>
-			<a href="#payment_details" style="text-decoration:none; color:#000;"><span style="background-color:#f44b42; padding:10;">Payment Details</span></a>
 		</nav></center>
 		
 		<!-- START OF FORM -->
@@ -71,6 +70,7 @@
 			<tr>
 			<td> a.)
 					<select id="prog_name_1">
+					<option value="" selected="selected" disabled="disabled">-- select one --</option>
 				  <optgroup label="Postgraduate">
 					<option value="4.450">4.450 Postgraduate Diploma in Business Administration</option>
 					<option value="4.700">4.700 Master of Business Administration</option>
@@ -123,7 +123,7 @@
 				<tr>
 			<td> b.)
 					<select id="prog_name_2">
-					<option value="0">Not Applicable</option>
+					<option value="" selected="selected" disabled="disabled">-- select one --</option>
 				  <optgroup label="Postgraduate">
 					<option value="4.450">4.450 Postgraduate Diploma in Business Administration</option>
 					<option value="4.700">4.700 Master of Business Administration</option>
@@ -176,7 +176,7 @@
 				<tr>
 			<td> c.)
 					<select id="prog_name_3">
-					<option value="0">Not Applicable</option>
+					<option value="" selected="selected" disabled="disabled">-- select one --</option>
 				  <optgroup label="Postgraduate">
 					<option value="4.450">4.450 Postgraduate Diploma in Business Administration</option>
 					<option value="4.700">4.700 Master of Business Administration</option>
@@ -232,7 +232,7 @@
 		
 		<fieldset id="personal_details">
 			<legend>Personal Details</legend>
-			<table width=80%>
+			<table width=100%>
 				<tr>
 					<td><label for="surname">Family or Surname:</label> <br /><input type="text" name="surname" maxlength=40 size=40 /></td>
 					<td colspan=3><label for="given_name">Given Name(s):</label> <br /><input type="text" name="given_name"  maxlength=40 size=40 /></td>
@@ -248,10 +248,10 @@
 					<td><input type="text" name="home_address_street" size="50" placeholder="Street address"/></td>			<td colspan=3><input type="text" name="mail_address_street" size="50" placeholder="Street Address" /></td>
 				</tr>	
 				<tr>
-					<td><input type="text" name="home_address_street" size="50" placeholder="City" /></td>			<td colspan=3><input type="text" name="mail_address_street" size="50" placeholder="City" /></td>
+					<td><input type="text" name="home_address_cityze="50" placeholder="City" /></td>			<td colspan=3><input type="text" name="mail_address_street" size="50" placeholder="City" /></td>
 				</tr>
 				<tr>
-					<td><input type="text" name="home_address_street" size="50" placeholder="State / Province / Region" /></td>			<td colspan=3><input type="text" name="mail_address_street" size="50" placeholder="State / Province / Region" /></td>
+					<td><input type="text" name="home_address_state" size="50" placeholder="State / Province / Region" /></td>			<td colspan=3><input type="text" name="mail_address_street" size="50" placeholder="State / Province / Region" /></td>
 				</tr>
 				<tr>
 					<td><label for="home_address_country">Country: </label>
@@ -1212,11 +1212,1382 @@
 					<input type="number" name="mobile_number" />
 					</td>
 				</tr>
-				<tr><td colspan=4><label for="email">Email: </label><input type="text" name="email" placeholder="abcxyz@email.com" size=50/>
+				<tr><td colspan=4><label for="email">Email: </label><input type="text" name="email" placeholder="abcxyz@email.com" size=50/></td></tr>
+				<tr><td colspan=4>If you know your NSN (National Student Number), please input here: <input type=number size="1" max=9 min=0 maxlength=1 width=10px /> <input type=number size="1" max=9 min=0 maxlength=1 width=10px />  <input type=number size="1" max=9 min=0 maxlength=1 width=10px /> - <input type=number size="1" max=9 min=0 maxlength=1 width=10px />  <input type=number size="1" max=9 min=0 maxlength=1 width=10px />  <input type=number size="1" max=9 min=0 maxlength=1 width=10px /> - <input type=number size="1" max=9 min=0 maxlength=1 width=10px /> <input type=number size="1" max=9 min=0 maxlength=1 width=10px /> <input type=number size="1" max=9 min=0 maxlength=1 width=10px /> <input type=number size="1" max=9 min=0 maxlength=1 width=10px /> </td>
+				</tr>
+				<tr><td colspan=4>Do you have a disability that we should be aware of to facilitate your studies at AIS? The information you supply is confidential.</td></tr>
+				<tr><td colspan=4>&nbsp;No <input type="checkbox" /> &nbsp; Yes <input type="checkbox" /> If YES, please describe disability <input type="text" size=50 />
+			</table>
+		</fieldset>
+		
+		<!-- EMERGENCY -->
+		
+		<fieldset id="emergency">
+			<legend>Emergency Contact Details</legend>
+			<p>Please provide the details of your parent/s / relative / next of kin whom we can contact in case of an emergency. If you are an international student, this must be a person whom we can contact in your home country.</p>
+			<table width=100%>
+				<tr>
+					<td>
+					<label for="relative">Name of Parent / Relative / Next of Kin:</label><br />
+					<input type="text" size=40 />
+					</td>
+					<td>
+					<label for="relative">Relationship to applicant:</label><br />
+					<input type="text" size=40 />
+					</td>
+					<tr>
+						<td colspan=2><label>Address in Home Country:</label><br />
+						<input type="text" name="relative_address_street" size="100" placeholder="Street address"/><br />
+						<input type="text" name="home_address_city" size="100" placeholder="City"/><br />
+						<input type="text" name="home_address_street" size="100" placeholder="State / Province / Region"/>
+						
+						</td>
+					</tr>
+					<tr>
+						<td><br />Phone: <select name="mobile_area_code>
+								<optgroup label="Other countries">
+									<option data-countryCode="DZ" value="213">Algeria (+213)</option>
+									<option data-countryCode="AD" value="376">Andorra (+376)</option>
+									<option data-countryCode="AO" value="244">Angola (+244)</option>
+									<option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+									<option data-countryCode="AG" value="1268">Antigua &amp; Barbuda (+1268)</option>
+									<option data-countryCode="AR" value="54">Argentina (+54)</option>
+									<option data-countryCode="AM" value="374">Armenia (+374)</option>
+									<option data-countryCode="AW" value="297">Aruba (+297)</option>
+									<option data-countryCode="AU" value="61">Australia (+61)</option>
+									<option data-countryCode="AT" value="43">Austria (+43)</option>
+									<option data-countryCode="AZ" value="994">Azerbaijan (+994)</option>
+									<option data-countryCode="BS" value="1242">Bahamas (+1242)</option>
+									<option data-countryCode="BH" value="973">Bahrain (+973)</option>
+									<option data-countryCode="BD" value="880">Bangladesh (+880)</option>
+									<option data-countryCode="BB" value="1246">Barbados (+1246)</option>
+									<option data-countryCode="BY" value="375">Belarus (+375)</option>
+									<option data-countryCode="BE" value="32">Belgium (+32)</option>
+									<option data-countryCode="BZ" value="501">Belize (+501)</option>
+									<option data-countryCode="BJ" value="229">Benin (+229)</option>
+									<option data-countryCode="BM" value="1441">Bermuda (+1441)</option>
+									<option data-countryCode="BT" value="975">Bhutan (+975)</option>
+									<option data-countryCode="BO" value="591">Bolivia (+591)</option>
+									<option data-countryCode="BA" value="387">Bosnia Herzegovina (+387)</option>
+									<option data-countryCode="BW" value="267">Botswana (+267)</option>
+									<option data-countryCode="BR" value="55">Brazil (+55)</option>
+									<option data-countryCode="BN" value="673">Brunei (+673)</option>
+									<option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+									<option data-countryCode="BF" value="226">Burkina Faso (+226)</option>
+									<option data-countryCode="BI" value="257">Burundi (+257)</option>
+									<option data-countryCode="KH" value="855">Cambodia (+855)</option>
+									<option data-countryCode="CM" value="237">Cameroon (+237)</option>
+									<option data-countryCode="CA" value="1">Canada (+1)</option>
+									<option data-countryCode="CV" value="238">Cape Verde Islands (+238)</option>
+									<option data-countryCode="KY" value="1345">Cayman Islands (+1345)</option>
+									<option data-countryCode="CF" value="236">Central African Republic (+236)</option>
+									<option data-countryCode="CL" value="56">Chile (+56)</option>
+									<option data-countryCode="CN" value="86">China (+86)</option>
+									<option data-countryCode="CO" value="57">Colombia (+57)</option>
+									<option data-countryCode="KM" value="269">Comoros (+269)</option>
+									<option data-countryCode="CG" value="242">Congo (+242)</option>
+									<option data-countryCode="CK" value="682">Cook Islands (+682)</option>
+									<option data-countryCode="CR" value="506">Costa Rica (+506)</option>
+									<option data-countryCode="HR" value="385">Croatia (+385)</option>
+									<option data-countryCode="CU" value="53">Cuba (+53)</option>
+									<option data-countryCode="CY" value="90392">Cyprus North (+90392)</option>
+									<option data-countryCode="CY" value="357">Cyprus South (+357)</option>
+									<option data-countryCode="CZ" value="42">Czech Republic (+42)</option>
+									<option data-countryCode="DK" value="45">Denmark (+45)</option>
+									<option data-countryCode="DJ" value="253">Djibouti (+253)</option>
+									<option data-countryCode="DM" value="1809">Dominica (+1809)</option>
+									<option data-countryCode="DO" value="1809">Dominican Republic (+1809)</option>
+									<option data-countryCode="EC" value="593">Ecuador (+593)</option>
+									<option data-countryCode="EG" value="20">Egypt (+20)</option>
+									<option data-countryCode="SV" value="503">El Salvador (+503)</option>
+									<option data-countryCode="GQ" value="240">Equatorial Guinea (+240)</option>
+									<option data-countryCode="ER" value="291">Eritrea (+291)</option>
+									<option data-countryCode="EE" value="372">Estonia (+372)</option>
+									<option data-countryCode="ET" value="251">Ethiopia (+251)</option>
+									<option data-countryCode="FK" value="500">Falkland Islands (+500)</option>
+									<option data-countryCode="FO" value="298">Faroe Islands (+298)</option>
+									<option data-countryCode="FJ" value="679">Fiji (+679)</option>
+									<option data-countryCode="FI" value="358">Finland (+358)</option>
+									<option data-countryCode="FR" value="33">France (+33)</option>
+									<option data-countryCode="GF" value="594">French Guiana (+594)</option>
+									<option data-countryCode="PF" value="689">French Polynesia (+689)</option>
+									<option data-countryCode="GA" value="241">Gabon (+241)</option>
+									<option data-countryCode="GM" value="220">Gambia (+220)</option>
+									<option data-countryCode="GE" value="7880">Georgia (+7880)</option>
+									<option data-countryCode="DE" value="49">Germany (+49)</option>
+									<option data-countryCode="GH" value="233">Ghana (+233)</option>
+									<option data-countryCode="GI" value="350">Gibraltar (+350)</option>
+									<option data-countryCode="GR" value="30">Greece (+30)</option>
+									<option data-countryCode="GL" value="299">Greenland (+299)</option>
+									<option data-countryCode="GD" value="1473">Grenada (+1473)</option>
+									<option data-countryCode="GP" value="590">Guadeloupe (+590)</option>
+									<option data-countryCode="GU" value="671">Guam (+671)</option>
+									<option data-countryCode="GT" value="502">Guatemala (+502)</option>
+									<option data-countryCode="GN" value="224">Guinea (+224)</option>
+									<option data-countryCode="GW" value="245">Guinea - Bissau (+245)</option>
+									<option data-countryCode="GY" value="592">Guyana (+592)</option>
+									<option data-countryCode="HT" value="509">Haiti (+509)</option>
+									<option data-countryCode="HN" value="504">Honduras (+504)</option>
+									<option data-countryCode="HK" value="852">Hong Kong (+852)</option>
+									<option data-countryCode="HU" value="36">Hungary (+36)</option>
+									<option data-countryCode="IS" value="354">Iceland (+354)</option>
+									<option data-countryCode="IN" value="91">India (+91)</option>
+									<option data-countryCode="ID" value="62">Indonesia (+62)</option>
+									<option data-countryCode="IR" value="98">Iran (+98)</option>
+									<option data-countryCode="IQ" value="964">Iraq (+964)</option>
+									<option data-countryCode="IE" value="353">Ireland (+353)</option>
+									<option data-countryCode="IL" value="972">Israel (+972)</option>
+									<option data-countryCode="IT" value="39">Italy (+39)</option>
+									<option data-countryCode="JM" value="1876">Jamaica (+1876)</option>
+									<option data-countryCode="JP" value="81">Japan (+81)</option>
+									<option data-countryCode="JO" value="962">Jordan (+962)</option>
+									<option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
+									<option data-countryCode="KE" value="254">Kenya (+254)</option>
+									<option data-countryCode="KI" value="686">Kiribati (+686)</option>
+									<option data-countryCode="KP" value="850">Korea North (+850)</option>
+									<option data-countryCode="KR" value="82">Korea South (+82)</option>
+									<option data-countryCode="KW" value="965">Kuwait (+965)</option>
+									<option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
+									<option data-countryCode="LA" value="856">Laos (+856)</option>
+									<option data-countryCode="LV" value="371">Latvia (+371)</option>
+									<option data-countryCode="LB" value="961">Lebanon (+961)</option>
+									<option data-countryCode="LS" value="266">Lesotho (+266)</option>
+									<option data-countryCode="LR" value="231">Liberia (+231)</option>
+									<option data-countryCode="LY" value="218">Libya (+218)</option>
+									<option data-countryCode="LI" value="417">Liechtenstein (+417)</option>
+									<option data-countryCode="LT" value="370">Lithuania (+370)</option>
+									<option data-countryCode="LU" value="352">Luxembourg (+352)</option>
+									<option data-countryCode="MO" value="853">Macao (+853)</option>
+									<option data-countryCode="MK" value="389">Macedonia (+389)</option>
+									<option data-countryCode="MG" value="261">Madagascar (+261)</option>
+									<option data-countryCode="MW" value="265">Malawi (+265)</option>
+									<option data-countryCode="MY" value="60">Malaysia (+60)</option>
+									<option data-countryCode="MV" value="960">Maldives (+960)</option>
+									<option data-countryCode="ML" value="223">Mali (+223)</option>
+									<option data-countryCode="MT" value="356">Malta (+356)</option>
+									<option data-countryCode="MH" value="692">Marshall Islands (+692)</option>
+									<option data-countryCode="MQ" value="596">Martinique (+596)</option>
+									<option data-countryCode="MR" value="222">Mauritania (+222)</option>
+									<option data-countryCode="YT" value="269">Mayotte (+269)</option>
+									<option data-countryCode="MX" value="52">Mexico (+52)</option>
+									<option data-countryCode="FM" value="691">Micronesia (+691)</option>
+									<option data-countryCode="MD" value="373">Moldova (+373)</option>
+									<option data-countryCode="MC" value="377">Monaco (+377)</option>
+									<option data-countryCode="MN" value="976">Mongolia (+976)</option>
+									<option data-countryCode="MS" value="1664">Montserrat (+1664)</option>
+									<option data-countryCode="MA" value="212">Morocco (+212)</option>
+									<option data-countryCode="MZ" value="258">Mozambique (+258)</option>
+									<option data-countryCode="MN" value="95">Myanmar (+95)</option>
+									<option data-countryCode="NA" value="264">Namibia (+264)</option>
+									<option data-countryCode="NR" value="674">Nauru (+674)</option>
+									<option data-countryCode="NP" value="977">Nepal (+977)</option>
+									<option data-countryCode="NL" value="31">Netherlands (+31)</option>
+									<option data-countryCode="NC" value="687">New Caledonia (+687)</option>
+									<option data-countryCode="NZ" selected value="64">New Zealand (+64)</option>
+									<option data-countryCode="NI" value="505">Nicaragua (+505)</option>
+									<option data-countryCode="NE" value="227">Niger (+227)</option>
+									<option data-countryCode="NG" value="234">Nigeria (+234)</option>
+									<option data-countryCode="NU" value="683">Niue (+683)</option>
+									<option data-countryCode="NF" value="672">Norfolk Islands (+672)</option>
+									<option data-countryCode="NP" value="670">Northern Marianas (+670)</option>
+									<option data-countryCode="NO" value="47">Norway (+47)</option>
+									<option data-countryCode="OM" value="968">Oman (+968)</option>
+									<option data-countryCode="PW" value="680">Palau (+680)</option>
+									<option data-countryCode="PA" value="507">Panama (+507)</option>
+									<option data-countryCode="PG" value="675">Papua New Guinea (+675)</option>
+									<option data-countryCode="PY" value="595">Paraguay (+595)</option>
+									<option data-countryCode="PE" value="51">Peru (+51)</option>
+									<option data-countryCode="PH" value="63">Philippines (+63)</option>
+									<option data-countryCode="PL" value="48">Poland (+48)</option>
+									<option data-countryCode="PT" value="351">Portugal (+351)</option>
+									<option data-countryCode="PR" value="1787">Puerto Rico (+1787)</option>
+									<option data-countryCode="QA" value="974">Qatar (+974)</option>
+									<option data-countryCode="RE" value="262">Reunion (+262)</option>
+									<option data-countryCode="RO" value="40">Romania (+40)</option>
+									<option data-countryCode="RU" value="7">Russia (+7)</option>
+									<option data-countryCode="RW" value="250">Rwanda (+250)</option>
+									<option data-countryCode="SM" value="378">San Marino (+378)</option>
+									<option data-countryCode="ST" value="239">Sao Tome &amp; Principe (+239)</option>
+									<option data-countryCode="SA" value="966">Saudi Arabia (+966)</option>
+									<option data-countryCode="SN" value="221">Senegal (+221)</option>
+									<option data-countryCode="CS" value="381">Serbia (+381)</option>
+									<option data-countryCode="SC" value="248">Seychelles (+248)</option>
+									<option data-countryCode="SL" value="232">Sierra Leone (+232)</option>
+									<option data-countryCode="SG" value="65">Singapore (+65)</option>
+									<option data-countryCode="SK" value="421">Slovak Republic (+421)</option>
+									<option data-countryCode="SI" value="386">Slovenia (+386)</option>
+									<option data-countryCode="SB" value="677">Solomon Islands (+677)</option>
+									<option data-countryCode="SO" value="252">Somalia (+252)</option>
+									<option data-countryCode="ZA" value="27">South Africa (+27)</option>
+									<option data-countryCode="ES" value="34">Spain (+34)</option>
+									<option data-countryCode="LK" value="94">Sri Lanka (+94)</option>
+									<option data-countryCode="SH" value="290">St. Helena (+290)</option>
+									<option data-countryCode="KN" value="1869">St. Kitts (+1869)</option>
+									<option data-countryCode="SC" value="1758">St. Lucia (+1758)</option>
+									<option data-countryCode="SD" value="249">Sudan (+249)</option>
+									<option data-countryCode="SR" value="597">Suriname (+597)</option>
+									<option data-countryCode="SZ" value="268">Swaziland (+268)</option>
+									<option data-countryCode="SE" value="46">Sweden (+46)</option>
+									<option data-countryCode="CH" value="41">Switzerland (+41)</option>
+									<option data-countryCode="SI" value="963">Syria (+963)</option>
+									<option data-countryCode="TW" value="886">Taiwan (+886)</option>
+									<option data-countryCode="TJ" value="7">Tajikstan (+7)</option>
+									<option data-countryCode="TH" value="66">Thailand (+66)</option>
+									<option data-countryCode="TG" value="228">Togo (+228)</option>
+									<option data-countryCode="TO" value="676">Tonga (+676)</option>
+									<option data-countryCode="TT" value="1868">Trinidad &amp; Tobago (+1868)</option>
+									<option data-countryCode="TN" value="216">Tunisia (+216)</option>
+									<option data-countryCode="TR" value="90">Turkey (+90)</option>
+									<option data-countryCode="TM" value="7">Turkmenistan (+7)</option>
+									<option data-countryCode="TM" value="993">Turkmenistan (+993)</option>
+									<option data-countryCode="TC" value="1649">Turks &amp; Caicos Islands (+1649)</option>
+									<option data-countryCode="TV" value="688">Tuvalu (+688)</option>
+									<option data-countryCode="UG" value="256">Uganda (+256)</option>
+									<!-- <option data-countryCode="GB" value="44">UK (+44)</option> -->
+									<option data-countryCode="UA" value="380">Ukraine (+380)</option>
+									<option data-countryCode="AE" value="971">United Arab Emirates (+971)</option>
+									<option data-countryCode="UY" value="598">Uruguay (+598)</option>
+									<!-- <option data-countryCode="US" value="1">USA (+1)</option> -->
+									<option data-countryCode="UZ" value="7">Uzbekistan (+7)</option>
+									<option data-countryCode="VU" value="678">Vanuatu (+678)</option>
+									<option data-countryCode="VA" value="379">Vatican City (+379)</option>
+									<option data-countryCode="VE" value="58">Venezuela (+58)</option>
+									<option data-countryCode="VN" value="84">Vietnam (+84)</option>
+									<option data-countryCode="VG" value="84">Virgin Islands - British (+1284)</option>
+									<option data-countryCode="VI" value="84">Virgin Islands - US (+1340)</option>
+									<option data-countryCode="WF" value="681">Wallis &amp; Futuna (+681)</option>
+									<option data-countryCode="YE" value="969">Yemen (North)(+969)</option>
+									<option data-countryCode="YE" value="967">Yemen (South)(+967)</option>
+									<option data-countryCode="ZM" value="260">Zambia (+260)</option>
+									<option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
+								</optgroup>
+							</select>
+					
+					<input type="number" name="phone_number" />
+					</td>
+					<td>Mobile: <select name="mobile_area_code>
+								<optgroup label="Other countries">
+									<option data-countryCode="DZ" value="213">Algeria (+213)</option>
+									<option data-countryCode="AD" value="376">Andorra (+376)</option>
+									<option data-countryCode="AO" value="244">Angola (+244)</option>
+									<option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+									<option data-countryCode="AG" value="1268">Antigua &amp; Barbuda (+1268)</option>
+									<option data-countryCode="AR" value="54">Argentina (+54)</option>
+									<option data-countryCode="AM" value="374">Armenia (+374)</option>
+									<option data-countryCode="AW" value="297">Aruba (+297)</option>
+									<option data-countryCode="AU" value="61">Australia (+61)</option>
+									<option data-countryCode="AT" value="43">Austria (+43)</option>
+									<option data-countryCode="AZ" value="994">Azerbaijan (+994)</option>
+									<option data-countryCode="BS" value="1242">Bahamas (+1242)</option>
+									<option data-countryCode="BH" value="973">Bahrain (+973)</option>
+									<option data-countryCode="BD" value="880">Bangladesh (+880)</option>
+									<option data-countryCode="BB" value="1246">Barbados (+1246)</option>
+									<option data-countryCode="BY" value="375">Belarus (+375)</option>
+									<option data-countryCode="BE" value="32">Belgium (+32)</option>
+									<option data-countryCode="BZ" value="501">Belize (+501)</option>
+									<option data-countryCode="BJ" value="229">Benin (+229)</option>
+									<option data-countryCode="BM" value="1441">Bermuda (+1441)</option>
+									<option data-countryCode="BT" value="975">Bhutan (+975)</option>
+									<option data-countryCode="BO" value="591">Bolivia (+591)</option>
+									<option data-countryCode="BA" value="387">Bosnia Herzegovina (+387)</option>
+									<option data-countryCode="BW" value="267">Botswana (+267)</option>
+									<option data-countryCode="BR" value="55">Brazil (+55)</option>
+									<option data-countryCode="BN" value="673">Brunei (+673)</option>
+									<option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+									<option data-countryCode="BF" value="226">Burkina Faso (+226)</option>
+									<option data-countryCode="BI" value="257">Burundi (+257)</option>
+									<option data-countryCode="KH" value="855">Cambodia (+855)</option>
+									<option data-countryCode="CM" value="237">Cameroon (+237)</option>
+									<option data-countryCode="CA" value="1">Canada (+1)</option>
+									<option data-countryCode="CV" value="238">Cape Verde Islands (+238)</option>
+									<option data-countryCode="KY" value="1345">Cayman Islands (+1345)</option>
+									<option data-countryCode="CF" value="236">Central African Republic (+236)</option>
+									<option data-countryCode="CL" value="56">Chile (+56)</option>
+									<option data-countryCode="CN" value="86">China (+86)</option>
+									<option data-countryCode="CO" value="57">Colombia (+57)</option>
+									<option data-countryCode="KM" value="269">Comoros (+269)</option>
+									<option data-countryCode="CG" value="242">Congo (+242)</option>
+									<option data-countryCode="CK" value="682">Cook Islands (+682)</option>
+									<option data-countryCode="CR" value="506">Costa Rica (+506)</option>
+									<option data-countryCode="HR" value="385">Croatia (+385)</option>
+									<option data-countryCode="CU" value="53">Cuba (+53)</option>
+									<option data-countryCode="CY" value="90392">Cyprus North (+90392)</option>
+									<option data-countryCode="CY" value="357">Cyprus South (+357)</option>
+									<option data-countryCode="CZ" value="42">Czech Republic (+42)</option>
+									<option data-countryCode="DK" value="45">Denmark (+45)</option>
+									<option data-countryCode="DJ" value="253">Djibouti (+253)</option>
+									<option data-countryCode="DM" value="1809">Dominica (+1809)</option>
+									<option data-countryCode="DO" value="1809">Dominican Republic (+1809)</option>
+									<option data-countryCode="EC" value="593">Ecuador (+593)</option>
+									<option data-countryCode="EG" value="20">Egypt (+20)</option>
+									<option data-countryCode="SV" value="503">El Salvador (+503)</option>
+									<option data-countryCode="GQ" value="240">Equatorial Guinea (+240)</option>
+									<option data-countryCode="ER" value="291">Eritrea (+291)</option>
+									<option data-countryCode="EE" value="372">Estonia (+372)</option>
+									<option data-countryCode="ET" value="251">Ethiopia (+251)</option>
+									<option data-countryCode="FK" value="500">Falkland Islands (+500)</option>
+									<option data-countryCode="FO" value="298">Faroe Islands (+298)</option>
+									<option data-countryCode="FJ" value="679">Fiji (+679)</option>
+									<option data-countryCode="FI" value="358">Finland (+358)</option>
+									<option data-countryCode="FR" value="33">France (+33)</option>
+									<option data-countryCode="GF" value="594">French Guiana (+594)</option>
+									<option data-countryCode="PF" value="689">French Polynesia (+689)</option>
+									<option data-countryCode="GA" value="241">Gabon (+241)</option>
+									<option data-countryCode="GM" value="220">Gambia (+220)</option>
+									<option data-countryCode="GE" value="7880">Georgia (+7880)</option>
+									<option data-countryCode="DE" value="49">Germany (+49)</option>
+									<option data-countryCode="GH" value="233">Ghana (+233)</option>
+									<option data-countryCode="GI" value="350">Gibraltar (+350)</option>
+									<option data-countryCode="GR" value="30">Greece (+30)</option>
+									<option data-countryCode="GL" value="299">Greenland (+299)</option>
+									<option data-countryCode="GD" value="1473">Grenada (+1473)</option>
+									<option data-countryCode="GP" value="590">Guadeloupe (+590)</option>
+									<option data-countryCode="GU" value="671">Guam (+671)</option>
+									<option data-countryCode="GT" value="502">Guatemala (+502)</option>
+									<option data-countryCode="GN" value="224">Guinea (+224)</option>
+									<option data-countryCode="GW" value="245">Guinea - Bissau (+245)</option>
+									<option data-countryCode="GY" value="592">Guyana (+592)</option>
+									<option data-countryCode="HT" value="509">Haiti (+509)</option>
+									<option data-countryCode="HN" value="504">Honduras (+504)</option>
+									<option data-countryCode="HK" value="852">Hong Kong (+852)</option>
+									<option data-countryCode="HU" value="36">Hungary (+36)</option>
+									<option data-countryCode="IS" value="354">Iceland (+354)</option>
+									<option data-countryCode="IN" value="91">India (+91)</option>
+									<option data-countryCode="ID" value="62">Indonesia (+62)</option>
+									<option data-countryCode="IR" value="98">Iran (+98)</option>
+									<option data-countryCode="IQ" value="964">Iraq (+964)</option>
+									<option data-countryCode="IE" value="353">Ireland (+353)</option>
+									<option data-countryCode="IL" value="972">Israel (+972)</option>
+									<option data-countryCode="IT" value="39">Italy (+39)</option>
+									<option data-countryCode="JM" value="1876">Jamaica (+1876)</option>
+									<option data-countryCode="JP" value="81">Japan (+81)</option>
+									<option data-countryCode="JO" value="962">Jordan (+962)</option>
+									<option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
+									<option data-countryCode="KE" value="254">Kenya (+254)</option>
+									<option data-countryCode="KI" value="686">Kiribati (+686)</option>
+									<option data-countryCode="KP" value="850">Korea North (+850)</option>
+									<option data-countryCode="KR" value="82">Korea South (+82)</option>
+									<option data-countryCode="KW" value="965">Kuwait (+965)</option>
+									<option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
+									<option data-countryCode="LA" value="856">Laos (+856)</option>
+									<option data-countryCode="LV" value="371">Latvia (+371)</option>
+									<option data-countryCode="LB" value="961">Lebanon (+961)</option>
+									<option data-countryCode="LS" value="266">Lesotho (+266)</option>
+									<option data-countryCode="LR" value="231">Liberia (+231)</option>
+									<option data-countryCode="LY" value="218">Libya (+218)</option>
+									<option data-countryCode="LI" value="417">Liechtenstein (+417)</option>
+									<option data-countryCode="LT" value="370">Lithuania (+370)</option>
+									<option data-countryCode="LU" value="352">Luxembourg (+352)</option>
+									<option data-countryCode="MO" value="853">Macao (+853)</option>
+									<option data-countryCode="MK" value="389">Macedonia (+389)</option>
+									<option data-countryCode="MG" value="261">Madagascar (+261)</option>
+									<option data-countryCode="MW" value="265">Malawi (+265)</option>
+									<option data-countryCode="MY" value="60">Malaysia (+60)</option>
+									<option data-countryCode="MV" value="960">Maldives (+960)</option>
+									<option data-countryCode="ML" value="223">Mali (+223)</option>
+									<option data-countryCode="MT" value="356">Malta (+356)</option>
+									<option data-countryCode="MH" value="692">Marshall Islands (+692)</option>
+									<option data-countryCode="MQ" value="596">Martinique (+596)</option>
+									<option data-countryCode="MR" value="222">Mauritania (+222)</option>
+									<option data-countryCode="YT" value="269">Mayotte (+269)</option>
+									<option data-countryCode="MX" value="52">Mexico (+52)</option>
+									<option data-countryCode="FM" value="691">Micronesia (+691)</option>
+									<option data-countryCode="MD" value="373">Moldova (+373)</option>
+									<option data-countryCode="MC" value="377">Monaco (+377)</option>
+									<option data-countryCode="MN" value="976">Mongolia (+976)</option>
+									<option data-countryCode="MS" value="1664">Montserrat (+1664)</option>
+									<option data-countryCode="MA" value="212">Morocco (+212)</option>
+									<option data-countryCode="MZ" value="258">Mozambique (+258)</option>
+									<option data-countryCode="MN" value="95">Myanmar (+95)</option>
+									<option data-countryCode="NA" value="264">Namibia (+264)</option>
+									<option data-countryCode="NR" value="674">Nauru (+674)</option>
+									<option data-countryCode="NP" value="977">Nepal (+977)</option>
+									<option data-countryCode="NL" value="31">Netherlands (+31)</option>
+									<option data-countryCode="NC" value="687">New Caledonia (+687)</option>
+									<option data-countryCode="NZ" selected value="64">New Zealand (+64)</option>
+									<option data-countryCode="NI" value="505">Nicaragua (+505)</option>
+									<option data-countryCode="NE" value="227">Niger (+227)</option>
+									<option data-countryCode="NG" value="234">Nigeria (+234)</option>
+									<option data-countryCode="NU" value="683">Niue (+683)</option>
+									<option data-countryCode="NF" value="672">Norfolk Islands (+672)</option>
+									<option data-countryCode="NP" value="670">Northern Marianas (+670)</option>
+									<option data-countryCode="NO" value="47">Norway (+47)</option>
+									<option data-countryCode="OM" value="968">Oman (+968)</option>
+									<option data-countryCode="PW" value="680">Palau (+680)</option>
+									<option data-countryCode="PA" value="507">Panama (+507)</option>
+									<option data-countryCode="PG" value="675">Papua New Guinea (+675)</option>
+									<option data-countryCode="PY" value="595">Paraguay (+595)</option>
+									<option data-countryCode="PE" value="51">Peru (+51)</option>
+									<option data-countryCode="PH" value="63">Philippines (+63)</option>
+									<option data-countryCode="PL" value="48">Poland (+48)</option>
+									<option data-countryCode="PT" value="351">Portugal (+351)</option>
+									<option data-countryCode="PR" value="1787">Puerto Rico (+1787)</option>
+									<option data-countryCode="QA" value="974">Qatar (+974)</option>
+									<option data-countryCode="RE" value="262">Reunion (+262)</option>
+									<option data-countryCode="RO" value="40">Romania (+40)</option>
+									<option data-countryCode="RU" value="7">Russia (+7)</option>
+									<option data-countryCode="RW" value="250">Rwanda (+250)</option>
+									<option data-countryCode="SM" value="378">San Marino (+378)</option>
+									<option data-countryCode="ST" value="239">Sao Tome &amp; Principe (+239)</option>
+									<option data-countryCode="SA" value="966">Saudi Arabia (+966)</option>
+									<option data-countryCode="SN" value="221">Senegal (+221)</option>
+									<option data-countryCode="CS" value="381">Serbia (+381)</option>
+									<option data-countryCode="SC" value="248">Seychelles (+248)</option>
+									<option data-countryCode="SL" value="232">Sierra Leone (+232)</option>
+									<option data-countryCode="SG" value="65">Singapore (+65)</option>
+									<option data-countryCode="SK" value="421">Slovak Republic (+421)</option>
+									<option data-countryCode="SI" value="386">Slovenia (+386)</option>
+									<option data-countryCode="SB" value="677">Solomon Islands (+677)</option>
+									<option data-countryCode="SO" value="252">Somalia (+252)</option>
+									<option data-countryCode="ZA" value="27">South Africa (+27)</option>
+									<option data-countryCode="ES" value="34">Spain (+34)</option>
+									<option data-countryCode="LK" value="94">Sri Lanka (+94)</option>
+									<option data-countryCode="SH" value="290">St. Helena (+290)</option>
+									<option data-countryCode="KN" value="1869">St. Kitts (+1869)</option>
+									<option data-countryCode="SC" value="1758">St. Lucia (+1758)</option>
+									<option data-countryCode="SD" value="249">Sudan (+249)</option>
+									<option data-countryCode="SR" value="597">Suriname (+597)</option>
+									<option data-countryCode="SZ" value="268">Swaziland (+268)</option>
+									<option data-countryCode="SE" value="46">Sweden (+46)</option>
+									<option data-countryCode="CH" value="41">Switzerland (+41)</option>
+									<option data-countryCode="SI" value="963">Syria (+963)</option>
+									<option data-countryCode="TW" value="886">Taiwan (+886)</option>
+									<option data-countryCode="TJ" value="7">Tajikstan (+7)</option>
+									<option data-countryCode="TH" value="66">Thailand (+66)</option>
+									<option data-countryCode="TG" value="228">Togo (+228)</option>
+									<option data-countryCode="TO" value="676">Tonga (+676)</option>
+									<option data-countryCode="TT" value="1868">Trinidad &amp; Tobago (+1868)</option>
+									<option data-countryCode="TN" value="216">Tunisia (+216)</option>
+									<option data-countryCode="TR" value="90">Turkey (+90)</option>
+									<option data-countryCode="TM" value="7">Turkmenistan (+7)</option>
+									<option data-countryCode="TM" value="993">Turkmenistan (+993)</option>
+									<option data-countryCode="TC" value="1649">Turks &amp; Caicos Islands (+1649)</option>
+									<option data-countryCode="TV" value="688">Tuvalu (+688)</option>
+									<option data-countryCode="UG" value="256">Uganda (+256)</option>
+									<!-- <option data-countryCode="GB" value="44">UK (+44)</option> -->
+									<option data-countryCode="UA" value="380">Ukraine (+380)</option>
+									<option data-countryCode="AE" value="971">United Arab Emirates (+971)</option>
+									<option data-countryCode="UY" value="598">Uruguay (+598)</option>
+									<!-- <option data-countryCode="US" value="1">USA (+1)</option> -->
+									<option data-countryCode="UZ" value="7">Uzbekistan (+7)</option>
+									<option data-countryCode="VU" value="678">Vanuatu (+678)</option>
+									<option data-countryCode="VA" value="379">Vatican City (+379)</option>
+									<option data-countryCode="VE" value="58">Venezuela (+58)</option>
+									<option data-countryCode="VN" value="84">Vietnam (+84)</option>
+									<option data-countryCode="VG" value="84">Virgin Islands - British (+1284)</option>
+									<option data-countryCode="VI" value="84">Virgin Islands - US (+1340)</option>
+									<option data-countryCode="WF" value="681">Wallis &amp; Futuna (+681)</option>
+									<option data-countryCode="YE" value="969">Yemen (North)(+969)</option>
+									<option data-countryCode="YE" value="967">Yemen (South)(+967)</option>
+									<option data-countryCode="ZM" value="260">Zambia (+260)</option>
+									<option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
+								</optgroup>
+							</select>
+					
+					<input type="number" name="mobile_number" />
+					</td>
+					<tr><td colspan=2><label for="email">Email: </label><input type="text" name="email" placeholder="abcxyz@email.com" size=50/></td></tr>
+					</tr>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<!-- CITIZENSHIP -->
+		
+		<fieldset id="citizenship">
+			<legend>Citizenship / Residency</legend>
+			<table width=100%>
+				<tr><td>What is your country of citizenship?
+				
+				<!-- LIST OF COUNTRIES DROPDOWN -->
+				<select>
+						<option value="AFG">Afghanistan</option>
+						<option value="ALA">Åland Islands</option>
+						<option value="ALB">Albania</option>
+						<option value="DZA">Algeria</option>
+						<option value="ASM">American Samoa</option>
+						<option value="AND">Andorra</option>
+						<option value="AGO">Angola</option>
+						<option value="AIA">Anguilla</option>
+						<option value="ATA">Antarctica</option>
+						<option value="ATG">Antigua and Barbuda</option>
+						<option value="ARG">Argentina</option>
+						<option value="ARM">Armenia</option>
+						<option value="ABW">Aruba</option>
+						<option value="AUS">Australia</option>
+						<option value="AUT">Austria</option>
+						<option value="AZE">Azerbaijan</option>
+						<option value="BHS">Bahamas</option>
+						<option value="BHR">Bahrain</option>
+						<option value="BGD">Bangladesh</option>
+						<option value="BRB">Barbados</option>
+						<option value="BLR">Belarus</option>
+						<option value="BEL">Belgium</option>
+						<option value="BLZ">Belize</option>
+						<option value="BEN">Benin</option>
+						<option value="BMU">Bermuda</option>
+						<option value="BTN">Bhutan</option>
+						<option value="BOL">Bolivia, Plurinational State of</option>
+						<option value="BES">Bonaire, Sint Eustatius and Saba</option>
+						<option value="BIH">Bosnia and Herzegovina</option>
+						<option value="BWA">Botswana</option>
+						<option value="BVT">Bouvet Island</option>
+						<option value="BRA">Brazil</option>
+						<option value="IOT">British Indian Ocean Territory</option>
+						<option value="BRN">Brunei Darussalam</option>
+						<option value="BGR">Bulgaria</option>
+						<option value="BFA">Burkina Faso</option>
+						<option value="BDI">Burundi</option>
+						<option value="KHM">Cambodia</option>
+						<option value="CMR">Cameroon</option>
+						<option value="CAN">Canada</option>
+						<option value="CPV">Cape Verde</option>
+						<option value="CYM">Cayman Islands</option>
+						<option value="CAF">Central African Republic</option>
+						<option value="TCD">Chad</option>
+						<option value="CHL">Chile</option>
+						<option value="CHN">China</option>
+						<option value="CXR">Christmas Island</option>
+						<option value="CCK">Cocos (Keeling) Islands</option>
+						<option value="COL">Colombia</option>
+						<option value="COM">Comoros</option>
+						<option value="COG">Congo</option>
+						<option value="COD">Congo, the Democratic Republic of the</option>
+						<option value="COK">Cook Islands</option>
+						<option value="CRI">Costa Rica</option>
+						<option value="CIV">Côte d'Ivoire</option>
+						<option value="HRV">Croatia</option>
+						<option value="CUB">Cuba</option>
+						<option value="CUW">Curaçao</option>
+						<option value="CYP">Cyprus</option>
+						<option value="CZE">Czech Republic</option>
+						<option value="DNK">Denmark</option>
+						<option value="DJI">Djibouti</option>
+						<option value="DMA">Dominica</option>
+						<option value="DOM">Dominican Republic</option>
+						<option value="ECU">Ecuador</option>
+						<option value="EGY">Egypt</option>
+						<option value="SLV">El Salvador</option>
+						<option value="GNQ">Equatorial Guinea</option>
+						<option value="ERI">Eritrea</option>
+						<option value="EST">Estonia</option>
+						<option value="ETH">Ethiopia</option>
+						<option value="FLK">Falkland Islands (Malvinas)</option>
+						<option value="FRO">Faroe Islands</option>
+						<option value="FJI">Fiji</option>
+						<option value="FIN">Finland</option>
+						<option value="FRA">France</option>
+						<option value="GUF">French Guiana</option>
+						<option value="PYF">French Polynesia</option>
+						<option value="ATF">French Southern Territories</option>
+						<option value="GAB">Gabon</option>
+						<option value="GMB">Gambia</option>
+						<option value="GEO">Georgia</option>
+						<option value="DEU">Germany</option>
+						<option value="GHA">Ghana</option>
+						<option value="GIB">Gibraltar</option>
+						<option value="GRC">Greece</option>
+						<option value="GRL">Greenland</option>
+						<option value="GRD">Grenada</option>
+						<option value="GLP">Guadeloupe</option>
+						<option value="GUM">Guam</option>
+						<option value="GTM">Guatemala</option>
+						<option value="GGY">Guernsey</option>
+						<option value="GIN">Guinea</option>
+						<option value="GNB">Guinea-Bissau</option>
+						<option value="GUY">Guyana</option>
+						<option value="HTI">Haiti</option>
+						<option value="HMD">Heard Island and McDonald Islands</option>
+						<option value="VAT">Holy See (Vatican City State)</option>
+						<option value="HND">Honduras</option>
+						<option value="HKG">Hong Kong</option>
+						<option value="HUN">Hungary</option>
+						<option value="ISL">Iceland</option>
+						<option value="IND">India</option>
+						<option value="IDN">Indonesia</option>
+						<option value="IRN">Iran, Islamic Republic of</option>
+						<option value="IRQ">Iraq</option>
+						<option value="IRL">Ireland</option>
+						<option value="IMN">Isle of Man</option>
+						<option value="ISR">Israel</option>
+						<option value="ITA">Italy</option>
+						<option value="JAM">Jamaica</option>
+						<option value="JPN">Japan</option>
+						<option value="JEY">Jersey</option>
+						<option value="JOR">Jordan</option>
+						<option value="KAZ">Kazakhstan</option>
+						<option value="KEN">Kenya</option>
+						<option value="KIR">Kiribati</option>
+						<option value="PRK">Korea, Democratic People's Republic of</option>
+						<option value="KOR">Korea, Republic of</option>
+						<option value="KWT">Kuwait</option>
+						<option value="KGZ">Kyrgyzstan</option>
+						<option value="LAO">Lao People's Democratic Republic</option>
+						<option value="LVA">Latvia</option>
+						<option value="LBN">Lebanon</option>
+						<option value="LSO">Lesotho</option>
+						<option value="LBR">Liberia</option>
+						<option value="LBY">Libya</option>
+						<option value="LIE">Liechtenstein</option>
+						<option value="LTU">Lithuania</option>
+						<option value="LUX">Luxembourg</option>
+						<option value="MAC">Macao</option>
+						<option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+						<option value="MDG">Madagascar</option>
+						<option value="MWI">Malawi</option>
+						<option value="MYS">Malaysia</option>
+						<option value="MDV">Maldives</option>
+						<option value="MLI">Mali</option>
+						<option value="MLT">Malta</option>
+						<option value="MHL">Marshall Islands</option>
+						<option value="MTQ">Martinique</option>
+						<option value="MRT">Mauritania</option>
+						<option value="MUS">Mauritius</option>
+						<option value="MYT">Mayotte</option>
+						<option value="MEX">Mexico</option>
+						<option value="FSM">Micronesia, Federated States of</option>
+						<option value="MDA">Moldova, Republic of</option>
+						<option value="MCO">Monaco</option>
+						<option value="MNG">Mongolia</option>
+						<option value="MNE">Montenegro</option>
+						<option value="MSR">Montserrat</option>
+						<option value="MAR">Morocco</option>
+						<option value="MOZ">Mozambique</option>
+						<option value="MMR">Myanmar</option>
+						<option value="NAM">Namibia</option>
+						<option value="NRU">Nauru</option>
+						<option value="NPL">Nepal</option>
+						<option value="NLD">Netherlands</option>
+						<option value="NCL">New Caledonia</option>
+						<option value="NZL" selected>New Zealand</option>
+						<option value="NIC">Nicaragua</option>
+						<option value="NER">Niger</option>
+						<option value="NGA">Nigeria</option>
+						<option value="NIU">Niue</option>
+						<option value="NFK">Norfolk Island</option>
+						<option value="MNP">Northern Mariana Islands</option>
+						<option value="NOR">Norway</option>
+						<option value="OMN">Oman</option>
+						<option value="PAK">Pakistan</option>
+						<option value="PLW">Palau</option>
+						<option value="PSE">Palestinian Territory, Occupied</option>
+						<option value="PAN">Panama</option>
+						<option value="PNG">Papua New Guinea</option>
+						<option value="PRY">Paraguay</option>
+						<option value="PER">Peru</option>
+						<option value="PHL">Philippines</option>
+						<option value="PCN">Pitcairn</option>
+						<option value="POL">Poland</option>
+						<option value="PRT">Portugal</option>
+						<option value="PRI">Puerto Rico</option>
+						<option value="QAT">Qatar</option>
+						<option value="REU">Réunion</option>
+						<option value="ROU">Romania</option>
+						<option value="RUS">Russian Federation</option>
+						<option value="RWA">Rwanda</option>
+						<option value="BLM">Saint Barthélemy</option>
+						<option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+						<option value="KNA">Saint Kitts and Nevis</option>
+						<option value="LCA">Saint Lucia</option>
+						<option value="MAF">Saint Martin (French part)</option>
+						<option value="SPM">Saint Pierre and Miquelon</option>
+						<option value="VCT">Saint Vincent and the Grenadines</option>
+						<option value="WSM">Samoa</option>
+						<option value="SMR">San Marino</option>
+						<option value="STP">Sao Tome and Principe</option>
+						<option value="SAU">Saudi Arabia</option>
+						<option value="SEN">Senegal</option>
+						<option value="SRB">Serbia</option>
+						<option value="SYC">Seychelles</option>
+						<option value="SLE">Sierra Leone</option>
+						<option value="SGP">Singapore</option>
+						<option value="SXM">Sint Maarten (Dutch part)</option>
+						<option value="SVK">Slovakia</option>
+						<option value="SVN">Slovenia</option>
+						<option value="SLB">Solomon Islands</option>
+						<option value="SOM">Somalia</option>
+						<option value="ZAF">South Africa</option>
+						<option value="SGS">South Georgia and the South Sandwich Islands</option>
+						<option value="SSD">South Sudan</option>
+						<option value="ESP">Spain</option>
+						<option value="LKA">Sri Lanka</option>
+						<option value="SDN">Sudan</option>
+						<option value="SUR">Suriname</option>
+						<option value="SJM">Svalbard and Jan Mayen</option>
+						<option value="SWZ">Swaziland</option>
+						<option value="SWE">Sweden</option>
+						<option value="CHE">Switzerland</option>
+						<option value="SYR">Syrian Arab Republic</option>
+						<option value="TWN">Taiwan, Province of China</option>
+						<option value="TJK">Tajikistan</option>
+						<option value="TZA">Tanzania, United Republic of</option>
+						<option value="THA">Thailand</option>
+						<option value="TLS">Timor-Leste</option>
+						<option value="TGO">Togo</option>
+						<option value="TKL">Tokelau</option>
+						<option value="TON">Tonga</option>
+						<option value="TTO">Trinidad and Tobago</option>
+						<option value="TUN">Tunisia</option>
+						<option value="TUR">Turkey</option>
+						<option value="TKM">Turkmenistan</option>
+						<option value="TCA">Turks and Caicos Islands</option>
+						<option value="TUV">Tuvalu</option>
+						<option value="UGA">Uganda</option>
+						<option value="UKR">Ukraine</option>
+						<option value="ARE">United Arab Emirates</option>
+						<option value="GBR">United Kingdom</option>
+						<option value="USA">United States</option>
+						<option value="UMI">United States Minor Outlying Islands</option>
+						<option value="URY">Uruguay</option>
+						<option value="UZB">Uzbekistan</option>
+						<option value="VUT">Vanuatu</option>
+						<option value="VEN">Venezuela, Bolivarian Republic of</option>
+						<option value="VNM">Viet Nam</option>
+						<option value="VGB">Virgin Islands, British</option>
+						<option value="VIR">Virgin Islands, U.S.</option>
+						<option value="WLF">Wallis and Futuna</option>
+						<option value="ESH">Western Sahara</option>
+						<option value="YEM">Yemen</option>
+						<option value="ZMB">Zambia</option>
+						<option value="ZWE">Zimbabwe</option>
+					</select>
+					</td>
+				<td>Passport Number (if not a NZ citizen): <input type="text" /></td>
+				</tr>
+				<tr><td>If not a NZ citizen, do you have Permanent Residency in New Zealand? &nbsp; &nbsp; Yes <input type="checkbox" /> No <input type="checkbox" /></td>
+				<td>Please attach Certified copy of Residency Permit: <input type="file" />
+			</table>
+		</fieldset>
+		
+		<!-- ETHNICITY -->
+		
+		<fieldset id="ethnicity">
+			<legend>Ethnicity</legend>
+			<table width=100%>
+			<tr><td>
+			What ethnic group(s) do you belong to? <br />
+			
+		<!---- EDIT THIS WITH THE PROPER ETHINIC GROUPS ---->	
+			
+			<select name="ethnicity">
+				<option value="" selected="selected" disabled="disabled">-- select one --</option>
+				<optgroup label="White">
+				  <option value="White English">English</option>
+				  <option value="White Welsh">Welsh</option>
+				  <option value="White Scottish">Scottish</option>
+				  <option value="White Northern Irish">Northern Irish</option>
+				  <option value="White Irish">Irish</option>
+				  <option value="White Gypsy or Irish Traveller">Gypsy or Irish Traveller</option>
+				  <option value="White Other">Any other White background</option>
+				</optgroup>
+				<optgroup label="Mixed or Multiple ethnic groups">
+				  <option value="Mixed White and Black Caribbean">White and Black Caribbean</option>
+				  <option value="Mixed White and Black African">White and Black African</option>
+				  <option value="Mixed White Other">Any other Mixed or Multiple background</option>
+				</optgroup>
+				<optgroup label="Asian">
+				  <option value="Asian Indian">Indian</option>
+				  <option value="Asian Pakistani">Pakistani</option>
+				  <option value="Asian Bangladeshi">Bangladeshi</option>
+				  <option value="Asian Chinese">Chinese</option>
+				  <option value="Asian Other">Any other Asian background</option>
+				</optgroup>
+				<optgroup label="Black">
+				  <option value="Black African">African</option>
+				  <option value="Black African American">African American</option>
+				  <option value="Black Caribbean">Caribbean</option>
+				  <option value="Black Other">Any other Black background</option>
+				</optgroup>
+				<optgroup label="Other ethnic groups">
+				  <option value="Arab">Arab</option>
+				  <option value="Hispanic">Hispanic</option>
+				  <option value="Latino">Latino</option>
+				  <option value="Native American">Native American</option>
+				  <option value="Pacific Islander">Pacific Islander</option>
+				  <option value="Other">Any other ethnic group</option>
+				</optgroup>
+			  </select>
+			</td>
+			<td>
+			If you identified yourself as New Zealand Māori, what is the name of your iwi? <br />
+			You may enter more than one iwi. <br />
+			
+			<!---- EDIT THIS WITH THE PROPER ETHINIC GROUPS ---->	
+			
+			<input type="text" size=50 />
+			</td></tr>
 			</table>
 		</fieldset>
 		
 		
+		<!--ACADEMIC INFORMATION -->
+		
+		<fieldset id="academic_info">
+			<legend>Academic Information</legend>
+			<table width=100%>
+				<tr><td colspan=5>
+				For those who have English as a Second Language, how long have you studied English? <input type=number size="2" max=50 min=0 maxlength=2 width=10px /> years <br />
+				In what countries? <input type="text" size=50 />
+				</td></tr>
+				<tr><td>Where did you study English?</td><td> Secondary School <input type="checkbox" /> </td><td> Private Language School <input type="checkbox" /> </td><td>University/Institute/College <input type="checkbox" /></td></tr>
+				<tr><td colspan=5>Name and result of examinations or qualifications in English (if any, IELTS, TOEFL, etc.) <input type="text" size=50 /></td></tr>
+				<tr><td>What is your English language level?</td><td> Beginner <input type="checkbox" /> </td><td> Elementary <input type="checkbox" /> </td><td>Intermediate <input type="checkbox" /></td><td>Advanced <input type="checkbox" /></td>
+				<tr><td colspan=5>What was the name of the last secondary / high school you attended? <input type="text" size=50 /></td></tr>
+				<tr><td colspan=2>How many years did you attend secondary / high school? <input type=number size="1" max=9 min=0 maxlength=2 width=10px /> years</td><td colspan=2>What year was your last year at secondary school? <input type=number size="1" min=1950 max=2019 maxlength=4 width=10px /></td></tr>
+				<tr><td colspan=5>Name your highest secondary / high school qualification: <input type="text" size=50 /></td></tr>
+				<tr><td colspan=5>Have you ever previously enrolled in a Tertiary Education (after secondary / high school) Institution? Yes <input type="checkbox" /> No <input type="checkbox" /></td></tr>
+				<tr><td colspan=3>Name of University / Institute / College: <input type="text" size=50 /></td>
+				
+				<td colspan=2>Country:
+				
+				<!-- LIST OF COUNTRIES DROPDOWN -->
+				<select>
+						<option value="AFG">Afghanistan</option>
+						<option value="ALA">Åland Islands</option>
+						<option value="ALB">Albania</option>
+						<option value="DZA">Algeria</option>
+						<option value="ASM">American Samoa</option>
+						<option value="AND">Andorra</option>
+						<option value="AGO">Angola</option>
+						<option value="AIA">Anguilla</option>
+						<option value="ATA">Antarctica</option>
+						<option value="ATG">Antigua and Barbuda</option>
+						<option value="ARG">Argentina</option>
+						<option value="ARM">Armenia</option>
+						<option value="ABW">Aruba</option>
+						<option value="AUS">Australia</option>
+						<option value="AUT">Austria</option>
+						<option value="AZE">Azerbaijan</option>
+						<option value="BHS">Bahamas</option>
+						<option value="BHR">Bahrain</option>
+						<option value="BGD">Bangladesh</option>
+						<option value="BRB">Barbados</option>
+						<option value="BLR">Belarus</option>
+						<option value="BEL">Belgium</option>
+						<option value="BLZ">Belize</option>
+						<option value="BEN">Benin</option>
+						<option value="BMU">Bermuda</option>
+						<option value="BTN">Bhutan</option>
+						<option value="BOL">Bolivia, Plurinational State of</option>
+						<option value="BES">Bonaire, Sint Eustatius and Saba</option>
+						<option value="BIH">Bosnia and Herzegovina</option>
+						<option value="BWA">Botswana</option>
+						<option value="BVT">Bouvet Island</option>
+						<option value="BRA">Brazil</option>
+						<option value="IOT">British Indian Ocean Territory</option>
+						<option value="BRN">Brunei Darussalam</option>
+						<option value="BGR">Bulgaria</option>
+						<option value="BFA">Burkina Faso</option>
+						<option value="BDI">Burundi</option>
+						<option value="KHM">Cambodia</option>
+						<option value="CMR">Cameroon</option>
+						<option value="CAN">Canada</option>
+						<option value="CPV">Cape Verde</option>
+						<option value="CYM">Cayman Islands</option>
+						<option value="CAF">Central African Republic</option>
+						<option value="TCD">Chad</option>
+						<option value="CHL">Chile</option>
+						<option value="CHN">China</option>
+						<option value="CXR">Christmas Island</option>
+						<option value="CCK">Cocos (Keeling) Islands</option>
+						<option value="COL">Colombia</option>
+						<option value="COM">Comoros</option>
+						<option value="COG">Congo</option>
+						<option value="COD">Congo, the Democratic Republic of the</option>
+						<option value="COK">Cook Islands</option>
+						<option value="CRI">Costa Rica</option>
+						<option value="CIV">Côte d'Ivoire</option>
+						<option value="HRV">Croatia</option>
+						<option value="CUB">Cuba</option>
+						<option value="CUW">Curaçao</option>
+						<option value="CYP">Cyprus</option>
+						<option value="CZE">Czech Republic</option>
+						<option value="DNK">Denmark</option>
+						<option value="DJI">Djibouti</option>
+						<option value="DMA">Dominica</option>
+						<option value="DOM">Dominican Republic</option>
+						<option value="ECU">Ecuador</option>
+						<option value="EGY">Egypt</option>
+						<option value="SLV">El Salvador</option>
+						<option value="GNQ">Equatorial Guinea</option>
+						<option value="ERI">Eritrea</option>
+						<option value="EST">Estonia</option>
+						<option value="ETH">Ethiopia</option>
+						<option value="FLK">Falkland Islands (Malvinas)</option>
+						<option value="FRO">Faroe Islands</option>
+						<option value="FJI">Fiji</option>
+						<option value="FIN">Finland</option>
+						<option value="FRA">France</option>
+						<option value="GUF">French Guiana</option>
+						<option value="PYF">French Polynesia</option>
+						<option value="ATF">French Southern Territories</option>
+						<option value="GAB">Gabon</option>
+						<option value="GMB">Gambia</option>
+						<option value="GEO">Georgia</option>
+						<option value="DEU">Germany</option>
+						<option value="GHA">Ghana</option>
+						<option value="GIB">Gibraltar</option>
+						<option value="GRC">Greece</option>
+						<option value="GRL">Greenland</option>
+						<option value="GRD">Grenada</option>
+						<option value="GLP">Guadeloupe</option>
+						<option value="GUM">Guam</option>
+						<option value="GTM">Guatemala</option>
+						<option value="GGY">Guernsey</option>
+						<option value="GIN">Guinea</option>
+						<option value="GNB">Guinea-Bissau</option>
+						<option value="GUY">Guyana</option>
+						<option value="HTI">Haiti</option>
+						<option value="HMD">Heard Island and McDonald Islands</option>
+						<option value="VAT">Holy See (Vatican City State)</option>
+						<option value="HND">Honduras</option>
+						<option value="HKG">Hong Kong</option>
+						<option value="HUN">Hungary</option>
+						<option value="ISL">Iceland</option>
+						<option value="IND">India</option>
+						<option value="IDN">Indonesia</option>
+						<option value="IRN">Iran, Islamic Republic of</option>
+						<option value="IRQ">Iraq</option>
+						<option value="IRL">Ireland</option>
+						<option value="IMN">Isle of Man</option>
+						<option value="ISR">Israel</option>
+						<option value="ITA">Italy</option>
+						<option value="JAM">Jamaica</option>
+						<option value="JPN">Japan</option>
+						<option value="JEY">Jersey</option>
+						<option value="JOR">Jordan</option>
+						<option value="KAZ">Kazakhstan</option>
+						<option value="KEN">Kenya</option>
+						<option value="KIR">Kiribati</option>
+						<option value="PRK">Korea, Democratic People's Republic of</option>
+						<option value="KOR">Korea, Republic of</option>
+						<option value="KWT">Kuwait</option>
+						<option value="KGZ">Kyrgyzstan</option>
+						<option value="LAO">Lao People's Democratic Republic</option>
+						<option value="LVA">Latvia</option>
+						<option value="LBN">Lebanon</option>
+						<option value="LSO">Lesotho</option>
+						<option value="LBR">Liberia</option>
+						<option value="LBY">Libya</option>
+						<option value="LIE">Liechtenstein</option>
+						<option value="LTU">Lithuania</option>
+						<option value="LUX">Luxembourg</option>
+						<option value="MAC">Macao</option>
+						<option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+						<option value="MDG">Madagascar</option>
+						<option value="MWI">Malawi</option>
+						<option value="MYS">Malaysia</option>
+						<option value="MDV">Maldives</option>
+						<option value="MLI">Mali</option>
+						<option value="MLT">Malta</option>
+						<option value="MHL">Marshall Islands</option>
+						<option value="MTQ">Martinique</option>
+						<option value="MRT">Mauritania</option>
+						<option value="MUS">Mauritius</option>
+						<option value="MYT">Mayotte</option>
+						<option value="MEX">Mexico</option>
+						<option value="FSM">Micronesia, Federated States of</option>
+						<option value="MDA">Moldova, Republic of</option>
+						<option value="MCO">Monaco</option>
+						<option value="MNG">Mongolia</option>
+						<option value="MNE">Montenegro</option>
+						<option value="MSR">Montserrat</option>
+						<option value="MAR">Morocco</option>
+						<option value="MOZ">Mozambique</option>
+						<option value="MMR">Myanmar</option>
+						<option value="NAM">Namibia</option>
+						<option value="NRU">Nauru</option>
+						<option value="NPL">Nepal</option>
+						<option value="NLD">Netherlands</option>
+						<option value="NCL">New Caledonia</option>
+						<option value="NZL" selected>New Zealand</option>
+						<option value="NIC">Nicaragua</option>
+						<option value="NER">Niger</option>
+						<option value="NGA">Nigeria</option>
+						<option value="NIU">Niue</option>
+						<option value="NFK">Norfolk Island</option>
+						<option value="MNP">Northern Mariana Islands</option>
+						<option value="NOR">Norway</option>
+						<option value="OMN">Oman</option>
+						<option value="PAK">Pakistan</option>
+						<option value="PLW">Palau</option>
+						<option value="PSE">Palestinian Territory, Occupied</option>
+						<option value="PAN">Panama</option>
+						<option value="PNG">Papua New Guinea</option>
+						<option value="PRY">Paraguay</option>
+						<option value="PER">Peru</option>
+						<option value="PHL">Philippines</option>
+						<option value="PCN">Pitcairn</option>
+						<option value="POL">Poland</option>
+						<option value="PRT">Portugal</option>
+						<option value="PRI">Puerto Rico</option>
+						<option value="QAT">Qatar</option>
+						<option value="REU">Réunion</option>
+						<option value="ROU">Romania</option>
+						<option value="RUS">Russian Federation</option>
+						<option value="RWA">Rwanda</option>
+						<option value="BLM">Saint Barthélemy</option>
+						<option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+						<option value="KNA">Saint Kitts and Nevis</option>
+						<option value="LCA">Saint Lucia</option>
+						<option value="MAF">Saint Martin (French part)</option>
+						<option value="SPM">Saint Pierre and Miquelon</option>
+						<option value="VCT">Saint Vincent and the Grenadines</option>
+						<option value="WSM">Samoa</option>
+						<option value="SMR">San Marino</option>
+						<option value="STP">Sao Tome and Principe</option>
+						<option value="SAU">Saudi Arabia</option>
+						<option value="SEN">Senegal</option>
+						<option value="SRB">Serbia</option>
+						<option value="SYC">Seychelles</option>
+						<option value="SLE">Sierra Leone</option>
+						<option value="SGP">Singapore</option>
+						<option value="SXM">Sint Maarten (Dutch part)</option>
+						<option value="SVK">Slovakia</option>
+						<option value="SVN">Slovenia</option>
+						<option value="SLB">Solomon Islands</option>
+						<option value="SOM">Somalia</option>
+						<option value="ZAF">South Africa</option>
+						<option value="SGS">South Georgia and the South Sandwich Islands</option>
+						<option value="SSD">South Sudan</option>
+						<option value="ESP">Spain</option>
+						<option value="LKA">Sri Lanka</option>
+						<option value="SDN">Sudan</option>
+						<option value="SUR">Suriname</option>
+						<option value="SJM">Svalbard and Jan Mayen</option>
+						<option value="SWZ">Swaziland</option>
+						<option value="SWE">Sweden</option>
+						<option value="CHE">Switzerland</option>
+						<option value="SYR">Syrian Arab Republic</option>
+						<option value="TWN">Taiwan, Province of China</option>
+						<option value="TJK">Tajikistan</option>
+						<option value="TZA">Tanzania, United Republic of</option>
+						<option value="THA">Thailand</option>
+						<option value="TLS">Timor-Leste</option>
+						<option value="TGO">Togo</option>
+						<option value="TKL">Tokelau</option>
+						<option value="TON">Tonga</option>
+						<option value="TTO">Trinidad and Tobago</option>
+						<option value="TUN">Tunisia</option>
+						<option value="TUR">Turkey</option>
+						<option value="TKM">Turkmenistan</option>
+						<option value="TCA">Turks and Caicos Islands</option>
+						<option value="TUV">Tuvalu</option>
+						<option value="UGA">Uganda</option>
+						<option value="UKR">Ukraine</option>
+						<option value="ARE">United Arab Emirates</option>
+						<option value="GBR">United Kingdom</option>
+						<option value="USA">United States</option>
+						<option value="UMI">United States Minor Outlying Islands</option>
+						<option value="URY">Uruguay</option>
+						<option value="UZB">Uzbekistan</option>
+						<option value="VUT">Vanuatu</option>
+						<option value="VEN">Venezuela, Bolivarian Republic of</option>
+						<option value="VNM">Viet Nam</option>
+						<option value="VGB">Virgin Islands, British</option>
+						<option value="VIR">Virgin Islands, U.S.</option>
+						<option value="WLF">Wallis and Futuna</option>
+						<option value="ESH">Western Sahara</option>
+						<option value="YEM">Yemen</option>
+						<option value="ZMB">Zambia</option>
+						<option value="ZWE">Zimbabwe</option>
+					</select>
+					</td>
+					</tr>
+				<tr><td colspan=2>What year was your first year in tertiary education?<input type=number size="1" min=1950 max=2019 maxlength=4 width=10px /></td><td colspan=2>How many years did you attend tertiary education? <input type=number size="2" max=50 min=0 maxlength=2 width=10px /> years</td></tr>
+				<tr><td colspan=5>Name the highest qualification(s) gained: <input type="text" size=50 /></td></tr>
+				<tr><td colspan=5><strong>Prior Activity.</strong> What was your main activity or occupation if you were in New Zealand at 1 October last year?</td></tr>
+
+			<tr><td colspan=5><table align=center>
+				<tr><td></td><td align=right>Secondary school student <input type="checkbox" /></td><td align=right>University student <input type="checkbox" /></td><td align=right>Overseas (irrespective of occupation <input type="checkbox" /></td><td></td></tr>
+				<tr><td></td><td align=right>Non-employed or beneficiary (excluding retired) <input type="checkbox" /></td><td align=right>Polytechnic student <input type="checkbox" /></td><td align=right>Private Training Establishment student <input type="checkbox" /></td><td></td></tr>
+				<tr><td></td><td align=right>Wage or salary worker <input type="checkbox" /></td><td align=right>House-person or retired <input type="checkbox" /></td><td align=right>Wānanga student <input type="checkbox" /></td><td></td></tr>
+				<tr><td></td><td align=right>Self-employed <input type="checkbox" /></td><td></td><td></td><td></td></tr>
+			</table></td></tr>
+			<tr><td colspan=5>Cross-Credits. Do you wish to apply for cross-credits? (N/A for Graduate Diplomas) Yes <input type="checkbox" /> No <input type="checkbox" /></td>
+			<tr><td colspan=5><p>If YES, please complete a Cross-Credit Application Form on arrival at AIS, and include official course descriptions for each course for which credit is claimed. Cross-credit application fees apply ($50.00 per course for studies in New Zealand, $275.00 per course/ module for studies completed overseas. There is no charge for courses included in approved articulation agreements with other providers, or for credit of NZDB courses or unit standards achieved).</p></td></tr>
+			</table>
+		</fieldset>
+		
+		
+		<!-- Services -->
+		
+		<fieldset id="services">
+			<legend>Services</legend>
+			<strong>Accomodation</strong><br />
+			<p>Do you wish to apply for accommodation (AIS student accommodation or homestay)?</p> Yes <input type="checkbox" /> No  <input type="checkbox" />
+			<p><strong>If YES, you must submit your Accommodation Application Form at least two weeks before your arrival date.</strong></p>
+			
+			<strong>Medical Insurance</strong>
+			<p>Do you wish to purchase travel and medical insurance through AIS?</p>  Yes <input type="checkbox" /> No  <input type="checkbox" /> <br />
+			<p>If YES, please complete a Southern Cross or Uni-Care insurance application form (download at www.ais.ac.nz/enrol).</p>
+			<p>If NO, please provide a copy of your Medical Insurance.</p> <input type="file" />
+			<p><strong>Note: Travel/Medical Insurance issued by an approved provider is compulsory for international students in New Zealand – see www.ais.ac.nz/insurance for a list of approved providers.</strong></p>
+			<strong>Airport Transfer/Pick up.</strong> 
+			<p>Do you want an AIS representative to meet you at Auckland Airport when you arrive? (Fees apply)</p> Yes <input type="checkbox" /> No  <input type="checkbox" /> <br />
+			<p>If YES, you must notify AIS two weeks before your arrival date.</p>
+			<strong>Marketing</strong> 
+			<p>How did you hear about AIS?</p>
+			<table width=80% align=center>
+				<tr><td>Friend / Family <input type="checkbox" /></td> 	<td>Agent <input type="checkbox" /></td>	<td>Internet Search <input type="checkbox" /> <input type="text" placeholder="Please specify" size=30/></td> </tr>
+				<tr><td>Education Fair/Expo <input type="checkbox" /></td>	<td>Other <input type="checkbox" /></td>	<td>Advertisement <input type="checkbox" /> <input type="text" placeholder="(Where was the advertisement?)" size=30/></td></tr>
+			</table>
+			<strong>Declaration of Agent</strong>
+			<p>Are you using the services of an Agent for your enrolment application?</p>
+			Yes <input type="checkbox" /> No  <input type="checkbox" /> <br />
+			<p>If YES, the business name of your Agent is: <input type="text" size=30 /></p>
+		</fieldset>
+		
+		<!-- DOCUMENTATION -->
+		<fieldset id="documentation">
+			<legend>Documentation</legend>
+			<p>You must provide CERTIFIED COPIES of the following:</p>
+				<table width=80%>
+					<tr><td>• Birth Certificate or Passport</td><td><input type="file" /></td</tr>
+					<tr><td>• Academic Certificates and Transcripts</td><td><input type="file" /></td></tr>
+					<tr><td>• Evidence of a legal change of name if the name on your application form is different to your relevant evidence, e.g. marriage certificate, deed poll declaration</td><td><input type="file" /></td></tr>
+				</table>
+			<p><strong>“CERTIFIED COPY” means a photocopy of your original document, signed as being a true and accurate copy by a Justice of the Peace(JP), Solicitor, Notary Public, or Approved Representative of AIS.</strong></p>
+		</fieldset>
+		<br />
+		<!-- Things to read by the enrolee -->
+		
+		<center><nav style="margin:10px;">
+			<a href="#payment_details" style="text-decoration:none; color:#000;"><span style="background-color:#f44b42; padding:10;">Payment Details</span></a>
+			<a href="#student_disclosure" style="text-decoration:none; color:#000"><span style="background-color:#f44b42; padding:10;">Students Disclosure Information</span></a>
+			<a href="#declaration" style="text-decoration:none; color:#000;"><span style="background-color:#f44b42; padding:10;">Declaration by Applicant</span></a>
+			<a href="#acknowledgement" style="text-decoration:none; color:#000"><span style="background-color:#f44b42; padding:10;">Acknowledgement of AIS Trust</span></a>
+		</nav></center>
+		
+		<fieldset id="payment_details">
+			<legend>Payment Details</legend>
+			
+			<p>Please send fees as follows:</p>
+			<ol type="a">
+			<li>By NZ Dollars Telegraphic Transfer (T/T) to: Jolly Duncan & Wells Trustees Ltd, AIS Student Trust.<br />
+			Account No: 12-3237-0004134-01<br />
+			Address: ASB Bank Ltd, East Tamaki Business Banking, 588 Chapel Road, East Tamaki, Auckland<br />
+			International Swift Code: ASBBNZ2A<br />
+			</li>
+			<li>By Bank Draft payable to “Jolly Duncan & Wells Trustees Ltd, AIS Student Trust”,<br />
+			forwarded to AIS, PO Box 2995, Auckland 1140, New Zealand. Attention: Academic Registrar<br />
+			Note: Payments may be made by cash, cheque, EFTPOS, student loan, bankdraft, direct credit, telegraphic transfer or selected credit cards
+			(VISA, Mastercard). All bank charges must be paid by the applicant. Payments by credit card may be made on request to the AIS cashier. Email: ais-accounts@ais.ac.nz or Phone: 09 815 1717 Ext 812
+			</li>
+			</ol>
+		</fieldset>
+		
+		<fieldset id="student_disclosure">
+			<legend>Students Disclosure Information</legend>
+			
+			<p><strong>ENROLMENT, PAYMENT, WITHDRAWAL AND REFUND POLICY, AND COMPLAINTS PROCEDURES</strong></p>
+			<ol type="a">
+			<li><strong>Application Procedure</strong>
+			<ol type="i">
+			<li>You must complete all sections of the AIS Enrolment Application Form, attach all relevant certified information, and when completed forward to Student Services - Marketing at AIS. Applications
+			are assessed and upon acceptance an Invoice and Offer of Place will be provided.
+			</li>
+			<li><strong>International Students Only.</strong> Please contact the nearest Immigration New Zealand office for information on applying for a visa to study in New Zealand. Upon receipt of our Offer of Place, you
+			may undergo “Pre-Visa Assessment” by applying for a visa, and you should receive Approval In Principle prior to paying tuition fees. Alternatively, transfer full payment to the AIS Student Trust
+			account. All fees are converted to New Zealand Dollars at the time of receipt. After your payment is processed, you will be sent a Receipt for fees paid and a Confirmation of Enrolment document
+			including an accommodation guarantee if required. You must send the Receipt and Confirmation of Enrolment document when applying for the Student Visa to be issued. If you require Airport
+			Pick-up and/or accommodation, you must inform AIS at least two weeks before your arrival in New Zealand. </li>
+			<li><strong>Domestic Students Only.</strong> Transfer payment of fees to the AIS Student Trust account prior to the commencement of your programme. If you are funding your course through a Student Loan, you
+			should finalise your Student Loan application with StudyLink and arrange for any balance of fees to be paid to AIS prior to commencement of studies. Successful applicants will be sent an Invoice
+			and a Receipt will be issued when payment is made.
+			</li>
+			<li><strong>Bring Your Own Device (BYOD).</strong> AIS uses e-books and other electronic methods to deliver quality education, and BYOD is a condition of enrolment. Your own device should meet the following
+			minimum standards: Laptops - MS Windows 7 (or preferably 8.1) operating system in English, 8GB of memory, and Wi-Fi capability. Tablets, Smart Phones and other devices - an IOS, Android or MS
+			Windows operating system in English, 8GB (or preferably 16GB) of memory, and Wi-Fi capability. It is strongly recommended that students who are issued with e-books use both a laptop and a
+			tablet/e-reader device.</li>
+			</ol>
+			</li>
+			<li><strong>Fees Protection</strong>
+			<ol type="i">
+			<li>Trust Account. All student fees are deposited directly into an independent Chartered Accountant’s Trust Account and are released to AIS in the following manner:
+			<ul>
+			<li>Tuition fees - 15% is released to AIS after the statutory withdrawal period after commencement of the programme, and the remaining amount periodically in arrears on a pro rata basis in relation
+			to the tuition delivered.</li>
+			<li>Accommodation or living costs - periodically in advance on a pro rata basis.</li>
+			</ul>
+			</li>
+			<li>If necessary, the Trustee can be contacted at: Jolly Duncan & Wells Ltd, 127 Main Highway, Ellerslie, Auckland (PO Box 11053, Ellerslie, Auckland 1542) Tel: (64-9) 579 7096 Fax: (64-9) 525 1169
+			Attention: Murray Wells Email: murraywells@jdw.co.nz
+			</li>
+			</ol>
+			</li>
+			<li><strong>Arrival at AIS.</strong> On arrival at AIS, please bring evidence of your identity, citizenship or visa status. For international students, a copy of your Medical Insurance Certificate must also be supplied to AIS
+			upon arrival in Auckland.</li>
+			<li><strong>Payment</strong>
+			<ol type="i">
+			<li>Students who are not up to date with payments of fees will not be entitled to continue the qualification or to graduate from it.</li>
+			<li>If payment is overdue, AIS will charge penalty interest on any overdue amount at the rate of 2.5% per month from the overdue date until payment in full is received by AIS.</li>
+			<li>The student will upon demand pay all AIS expenses and legal costs (on a solicitor/agent/representative/client basis) in the collection of all overdue fees, plus debt collection agency costs
+			(usually a surcharge of 40.35% of the amount due including GST).</li>
+			</ol>
+			</li>
+			<li><strong>Withdrawal and Refund Procedures</strong>
+			<ol type="i">
+			<li>
+			<ol type="a">
+			<li>International students: For programmes over three months, all payments exceeding up to 25% of the fees paid will be refunded if the student withdraws within the first ten working days
+			after the first day the student is required to be at AIS to commence the programme of studies in which they are enrolled in. After this, fees paid are non-refundable. Students withdrawing
+			within one month prior to the start of the programme will be entitled to a refund less a deduction of 17.5%. International students withdrawing earlier than one month prior to the start of the
+			programme will be entitled to a refund less a deduction of NZ$500 or 10% of the fees paid,w hichever is the lesser.</li>
+			<li>Domestic students: For programmes over three months, all payments exceeding NZ$500 or 10% of the fees paid, whichever is the lesser, will be refunded if the student withdraws prior to or
+			within the first seven days after the first day the student is required to be at AIS to commence the programme of studies enrolled in. After this, fees paid are non-refundable.
+			For programmes of five weeks or more but less than three months, 75% of the fees padi will be refunded if the student withdraws prior to or within the first five days of the programme
+			commencement. After this, fees paid are non-refundable.</li>
+			</ol>
+			</li>
+			<li>For programmes under five weeks, 50% of the fees paid will be refunded if the student withdraws prior to or within the first two days of the programme commencement. After this, fees paid are
+			non-refundable.</li>
+			<li>Any applications for withdrawal with refund must be made on a Tuition Fees Refund Request form, and must state reasons in full. Written confirmation from the student’s parents, guardian or
+			agent is required if the enrolment was made through them, and refunds will be transferred to the original source. If the student is transferring to another institution, a copy of the new student visa
+			must be provided.</li>
+			<li>Advance notice must be given for cancellation of accommodation arrangements (one week for homestay and two weeks for dormitory).</li>
+			<li>Full refunds will be given in the case of cancellation by AIS of a course/qualification before or during the course/qualification, or if the student visa is declined by Immigration New Zealand.</li>
+			<li>Withdrawals from courses within the programme received after the fifth week of the semester will incur course results of ‘E’ (Failure to complete).</li>
+			<li>Applications to change education provider require approval from Immigration New Zealand, and students must study in accordance with their Student Visa while awaiting a decision from
+			Immigration New Zealand.</li>
+			<li>Refund requests outside the above criteria should be submitted in writing to the Academic Registrar for special consideration.</li>
+			<li>Fees are not adjusted if an international student’s immigration status changes to Permanent Resident during the enrolment period paid for.</li>
+			</li>
+			<li><strong>Student Grievances.</strong> In the first instance, issues should be discussed with a Student Services Officer, teacher, another staff member, or a student representative. Failing satisfactory resolution, students
+			may make an appointment with, or write to, the Academic Head of Programme, Marketing and Student Services Manager or the President. If necessary, complaints may be submitted in writing to the
+			following external authorities: New Zealand Qualifications Authority, English New Zealand or iStudent Complaints. Full contact details are contained in the AIS Student Handbook.
+			</li>
+			<li><strong>AIS reserves the right to decline an application from any applicant without explanation.</strong>
+			Note: 
+			<ol type="a">
+			<li>Withdrawal and refund procedures are in accordance with the Education Act 1989 and its subsequent amendments.</li>
+			
+			<li>Your name, date of birth and residency as entered on this form will be included in the National Student Index, and may be used in an authorised information matching programme with the New
+			Zealand Birth Register.</li>
+			</ol>
+			</li>
+			</ol>
+			<center><h4><input type="checkbox" />I have read and agree to the following terms.</h4></center>
+		</fieldset>
+		
+		<fieldset id="declaration">
+			<legend>Declaration by Applicant (Prospective Student)</legend>
+			<ol type="a">
+			<li>I declare that the information supplied in this application and the attached documents is true and complete. I also understand that AIS may suspend or terminate my enrolment if
+			any falsified documents are discovered during the application or enrolment process or during my study.</li>
+			<li>I have read and accept the Enrolment, Payment, Withdrawal and Refund Policy above.</li>
+			<li>In signing this enrolment form I undertake to pay all fees as they become due, including any late fees and collection charges.</li>
+			<li>In signing this enrolment form I undertake to comply with the published rules and policies of AIS with regard to attendance, academic progress, standard of dress, health and safety,
+			and behaviour.</li>
+			<li>I undertake to provide up-to-date address and contact details at all times, and up-to-date copies of my visa and Medical Insurance Certificate and any renewal.</li>
+			<li><strong>Privacy Act 1993.</strong> I authorise any person or company to provide to AIS such information as required in response to credit and enrolment enquiries. I further authorise AIS to furnish
+			to any governmental organisation or agency and to any other third party, including my parents/guardian if I am under 18, details of my enrolment application and subsequent
+			dealings. Such information includes attendance and academic records that I may have as a result of my application being actioned and accepted by AIS. I give this authorisation on the
+			understanding that the institute will observe the general conditions governing the release of information, as set out in the Privacy Act 1993, and that I may see any information held
+			about me and amend any errors in that information by contacting the Academic Registrar.</li>
+			
+			<li>I authorise AIS to discuss my student visa application for AIS with Immigration New Zealand; to obtain information regarding the processing of the visa application and the decision on
+			the application.</li>
+			<li>I acknowledge that if I am an international student I must have approved travel and medical insurance cover while I am studying in New Zealand.</li>
+			<li>
+			<strong>Statutory Information Statement for Students Required under Section 234B of the Education Act 1989.</strong> Auckland Institute of Studies Ltd (trading as AIS ) is required to provide
+			prospective students with a written statement covering the information listed below before accepting their enrolment.
+			<ol type="i">
+			<li>
+			The total costs and other financial commitments associated with the programme or training scheme for which the student seeks enrolment: <em>Refer to the current Fees Schedule
+			which can be downloaded at www.ais.ac.nz/enrol/. For fees for additional services, refer to the Supplementary Fees List which can be downloaded at www.ais.ac.nz/enrol/.</em></li>
+			<li>The cost of fees charged for student services provided by the establishment: <em>Refer to the information on Student Services Fee at www.ais.ac.nz/.</em></li>
+			<li>Any material conflicts of interest of any of the governing members of the establishment: <em>There are no governing members of AIS that have material conflicts of interest.</em></li>
+			<li>Any interests that any governing member of the establishment has in organisations in the education or immigration sector that provide goods or services to tertiary students:</li><br />
+			<em>The Directors of AIS (YS Hsieh, John Wood, Richard Smith, William Ou, Kevin Chen, Jennifer Chen and Wendy Ku) are shareholders of AIS Properties Ltd which owns the campus
+			properties from which the institute operates.</em>
+			For programmes extending across more than one year, the institute reserves the right to review its fees annually and students are advised to make allowance for modest annual
+			increases (in line with general cost increases).
+			As a prospective student of AIS, I confirm that I have received a copy of this Statutory Information Statement and that I have received the information referred to (i) i) and ii) above.
+			</li>
+			</ol>
+			</li>
+			</ol>
+			<br />
+			<center><h4><input type="checkbox" />I have read and agree to the following terms.</h4></center>
+		</fieldset>
+		
+		<fieldset id="acknowledgement">
+			<legend>Acknowledgement of AIS Trust Account</legend>
+
+			<p>EXPLANATORY NOTE TO STUDENT ACKNOWLEDGEMENT</p>
+			<ol>
+			<li>The purpose of the Student Acknowledgement form below is to make sure that:
+			<ol type="a">
+			<li>
+			you understand what happens to any refunds (if there are any) of your student fees if your course closes; and</li>
+			<li>you provide the necessary information about yourself and your student fees.</li>
+			</ol>
+			<li>By signing the Student Acknowledgement form below, you are agreeing that:
+			<ol type="a">
+			<li>
+			You understand that if your course closes (a Course Closure Event), it will be the trustee’s duty to make sure the correct amounts of any refunds (if there are any) are
+			distributed in accordance with the law and the New Zealand Qualifications Authority Policy. As such, your refunds may need to be paid to another PTE if you enrol in
+			another course (the Alternative Provider), your student loan provider such as StudyLink (the Loan Provider), yourself, or anyone else who should be paid your refund (such
+			as any person who may have paid your fees for you) (the Third Party).</li>
+			<li>You understand that your personal information about yourself will be given to your PTE, the New Zealand Qualifications Authority and your trustee.</li>
+			</ol></li>
+			<li>Please read the Student Acknowledgement carefully before signing.</li>
+			</ol>
+			
+			<br />
+			<p>STUDENT ACKNOWLEDGEMENT</p>
+			<ol>
+			<li>I am enrolling as a student of AIS and wish to pay my Student Fees to Jolly Duncan & Wells Trustees Ltd as trustee to be held in the Trustee’s Trust Account, as an individual
+			trust for the protection of my Student Fees paid to AIS.</li>
+			<li>I will pay my Student Fees to Jolly Duncan & Wells Trustees Ltd and authorise the Trustee to apply the Student Fees (and any interest) in accordance with the provisions and
+			terms of the Deed and in the matter set out in the periodic payment schedule produced by AIS from time to time.</li>
+			<li>I understand that after I sign this document I cannot withdraw this authorisation to the Trustee. I acknowledge and agree that:
+			<ol type="a">
+			<li>if a Course Closure Event occurs and I transfer to an Alternative Provider with the approval of the New Zealand Qualifications Authority (NZQA), an amount agreed by me,
+			up to the amount of Student Fees held on trust attributable to me, will be transferred from the Trust Fund to that Alternative Provider;</li>
+			<li>
+			in the event that I withdraw from the course or a Course Closure Event occurs and I owe money to a Loan Provider in respect of that course, the Trustee is authorised to
+			repay the amount of Student Fees held on trust attributable to me, less any amount transferred to an Alternative Provider, directly to that Loan Provider to the extent
+			required to settle the amount due to the Loan Provider;</li>
+			<li>
+			subject to 3 b) above, in the event that I withdraw from the Course the Trustee will refund such Student Fees to me in accordance with the provisions of the Education Act
+			1989 and the AIS refund policy;</li>
+			<li>
+			in the event that I withdraw from the course or a Course Closure Event occurs and the Trustee refunds any amount directly to me, the Trustee will refund the amount
+			attributable to me by way of direct credit to my bank account or cheque posted to my last known postal address notified to that Trustee;</li>
+			<li>
+			if another party is entitled to receive any the amount attributable to me, I will provide the Trustee with the contact details of that party (as required by paragraph 5 below)
+			to which the refund should be sent;</li>
+			<li>personal information about me and information about my Student Fees may be supplied by AIS to NZQA, the Auditor and the Trustee and by the Trustee or Auditor to
+			NZQA;</li>
+			<li>after the payments contemplated in (a) (b) (c) and (d) above have been made, the trusts on which the Trustee was holding the Trust Fund will have been discharged;</li>
+			any interest earned on the Trust Account prior to payment under (a) (b) (c) or (d) above will vest in and be payable to AIS for its own benefit, and I will have no claim to such
+			interest;</li>
+			<li><strong>I <input type="radio" name="eighteen" />am / <input type="radio" name="eighteen" />am </strong>not 18 years of age or older <em>(delete which ever is not applicable. If Student is under 18, Parent/Guardian also to sign).</em></li>
+			</ol>
+			<li>Capitalised terms used in this agreement shall have the meaning as defined in the Student Fee Protection Standard Trust Deed between AIS and the Trustee, a copy of which
+			is available from AIS or the Trustee (the “Deed”).</li>
+			<li><strong>Details of any third party entitled to receive any refund on account of Student Fees:</strong>
+			<br />
+			<label>Name:</label><input type="text" size=40/><br />
+			<label>Telephone:</label><input type="text" size=40 /><br />
+			<label>Address:</label><br />
+			<input type="text" name="relative_address_street" size="40" placeholder="Street address"/><br />
+			<input type="text" name="home_address_city" size="40" placeholder="City"/><br />
+			<input type="text" name="home_address_street" size="40" placeholder="State / Province / Region"/>
+			</li>
+			<li><strong>Trustee Account Details:</strong> Jolly Duncan & Wells Trustees Ltd, AIS Student Trust<br/>
+				<strong>Bank:</strong> ASB Bank Ltd, East Tamaki Business Banking, 588 Chapel Road, East Tamaki, Auckland<br />
+				<strong>Bank Account No:</strong> Account No: 12-3237-0004134-01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Swift Code:</strong> ASBBNZ2A
+				<br />
+				<p><em>Important: The Trustee will not protect your Student Fees unless they are paid to the account referred to above. Please advise your bank to note
+that the payment is made on your behalf.</em></p>
+			</li>
+			</ol>
+			<br />
+			<center><h4><input type="checkbox" />I have read and agree to the following terms.</h4></center>
+		</fieldset>
 	</main>
 	
 	<footer>
